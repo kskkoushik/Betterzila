@@ -3,3 +3,4 @@ langchain
 faiss-cpu
 streamlit
 Gunicorn
+PyPDF2
