@@ -2,4 +2,4 @@ google-generativeai
 langchain
 faiss-cpu
 streamlit
-gunicorn
+Gunicorn
