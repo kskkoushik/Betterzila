@@ -45,8 +45,8 @@ def user_input(user_question):
             st.write("Bot: ", message.content)
 def main():
     st.set_page_config("Chat with Multiple PDFs")
-    st.header("Chat with Multiple PDF 💬")
-    user_question = st.text_input("Ask a Question from the PDF Files")
+    st.header("Clarify_AI 💬")
+    user_question = st.text_input("Ask a Question get it solved by AI")
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
     if "chatHistory" not in st.session_state:
@@ -54,9 +54,9 @@ def main():
     if user_question:
         user_input(user_question)
     with st.sidebar:
-        st.title("Settings")
-        st.subheader("Upload your Documents")
-        pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Process Button", accept_multiple_files=True)
+        st.title("Settings⚙️")
+        st.subheader("Upload to AI🌟")
+        pdf_docs = st.file_uploader("Upload your PDF Files and TAP on Process Button", accept_multiple_files=True)
         if st.button("Process"):
             with st.spinner("Processing"):
                 raw_text = get_pdf_text(pdf_docs)
