@@ -45,7 +45,7 @@ def user_input(user_question):
             st.write("Bot: ", message.content)
 def main():
     st.set_page_config("Chat with Multiple PDFs")
-    st.header("Clarify_AI 💬")
+    st.header("BetterZila pdf content generation 💬")
     user_question = st.text_input("Ask a Question get it solved by AI")
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
